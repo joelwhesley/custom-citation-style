@@ -12,41 +12,37 @@
     <updated>2026-01-01T00:00:00+00:00</updated>
   </info>
 
+  <!-- Citation -->
   <citation>
     <layout prefix="[" suffix="]">
       <text variable="citation-number"/>
     </layout>
   </citation>
 
+  <!-- Bibliography -->
   <bibliography>
     <layout>
 
-      <!-- Nomor -->
       <text variable="citation-number" prefix="[" suffix="] "/>
 
-      <!-- Author -->
       <names variable="author" delimiter=", ">
         <name name-as-sort-order="first"/>
       </names>
       <text value=". "/>
 
-      <!-- Tahun -->
       <date variable="issued">
         <date-part name="year"/>
       </date>
       <text value=". "/>
 
-      <!-- Judul -->
       <text variable="title" font-style="italic"/>
       <text value=". "/>
 
-      <!-- Buku -->
       <group delimiter=": ">
         <text variable="publisher-place"/>
         <text variable="publisher"/>
       </group>
 
-      <!-- Jurnal -->
       <group prefix=" ">
         <text variable="container-title" font-style="italic"/>
         <text variable="volume" prefix=" "/>
@@ -58,12 +54,10 @@
 
       <text value="."/>
 
-      <!-- URL -->
       <group prefix=" ">
-        <text variable="URL" font-style="italic"/>
+        <text variable="URL"/>
       </group>
 
-      <!-- Access -->
       <group prefix=" Diakses tanggal ">
         <date variable="accessed">
           <date-part name="day"/>
