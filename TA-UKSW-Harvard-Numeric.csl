@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>TA UKSW Harvard Numeric</title>
+    <id>http://www.example.org/styles/ta-uksw-harvard-numeric</id>
+    <author>
+      <name>Custom TA Style</name>
+    </author>
+    <category citation-format="numeric"/>
+    <updated>2026-01-01</updated>
+  </info>
+
+  <!-- Citation -->
+  <citation>
+    <layout prefix="[" suffix="]" delimiter=",">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <!-- Bibliography -->
+  <bibliography>
+    <layout>
+      <text variable="citation-number" prefix="[" suffix="] "/>
+
+      <!-- Author -->
+      <names variable="author">
+        <name name-as-sort-order="first" initialize-with=". " delimiter=", "/>
+      </names>
+      <text value=". "/>
+
+      <!-- Year -->
+      <date variable="issued">
+        <date-part name="year"/>
+      </date>
+      <text value=". "/>
+
+      <!-- Title -->
+      <text variable="title" font-style="italic"/>
+      <text value=". "/>
+
+      <!-- Publisher -->
+      <group delimiter=": ">
+        <text variable="publisher-place"/>
+        <text variable="publisher"/>
+      </group>
+      <text value="."/>
+
+      <!-- Journal Info -->
+      <group prefix=" ">
+        <text variable="container-title" font-style="italic"/>
+        <text variable="volume" font-style="italic" prefix=", "/>
+        <group prefix="(" suffix=")">
+          <text variable="issue"/>
+        </group>
+        <text variable="page" prefix=": "/>
+      </group>
+
+      <!-- URL -->
+      <group prefix=" ">
+        <text variable="URL" font-style="italic"/>
+      </group>
+
+      <!-- Access Date -->
+      <group prefix=" Diakses tanggal ">
+        <date variable="accessed">
+          <date-part name="day"/>
+          <text value=" "/>
+          <date-part name="month"/>
+          <text value=" "/>
+          <date-part name="year"/>
+        </date>
+      </group>
+
+    </layout>
+  </bibliography>
+</style>
