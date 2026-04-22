@@ -2,9 +2,9 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
 
   <info>
-    <title>TA UKSW Custom</title>
-    <id>http://www.zotero.org/styles/ta-uksw-custom</id>
-    <link href="http://www.zotero.org/styles/ta-uksw-custom" rel="self"/>
+    <title>TA UKSW Clean</title>
+    <id>http://www.zotero.org/styles/ta-uksw-clean</id>
+    <link href="http://www.zotero.org/styles/ta-uksw-clean" rel="self"/>
     <author>
       <name>Custom</name>
     </author>
@@ -12,21 +12,18 @@
     <updated>2026-01-01T00:00:00+00:00</updated>
   </info>
 
-  <!-- Citation -->
   <citation>
     <layout prefix="[" suffix="]">
       <text variable="citation-number"/>
     </layout>
   </citation>
 
-  <!-- Bibliography -->
   <bibliography>
     <layout>
-
       <text variable="citation-number" prefix="[" suffix="] "/>
 
-      <names variable="author" delimiter=", ">
-        <name name-as-sort-order="first"/>
+      <names variable="author">
+        <name name-as-sort-order="first" delimiter=", "/>
       </names>
       <text value=". "/>
 
@@ -45,7 +42,7 @@
 
       <group prefix=" ">
         <text variable="container-title" font-style="italic"/>
-        <text variable="volume" prefix=" "/>
+        <text variable="volume" prefix=", "/>
         <group prefix="(" suffix=")">
           <text variable="issue"/>
         </group>
